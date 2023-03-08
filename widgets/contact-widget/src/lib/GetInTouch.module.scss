@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1128px;
+}
+
+.ctaInner {
+  position: relative;
+  background: #15181d;
+  overflow: hidden;
+  padding: 64px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (min-width: 641px) {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+}
+
+.sectionTitle {
+  margin-bottom: 40px;
+  @media (min-width: 641px) {
+    margin-bottom: 0;
+    padding-right: 24px;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "yarn-mono-repo-vite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "dev:footer": "yarn workspaces run dev",
+    "dev:contact": "yarn workspaces run dev"
+  },
+  "workspaces": [
+    "apps/*",
+    "widgets/*",
+    "libs/*"
+  ]
+}

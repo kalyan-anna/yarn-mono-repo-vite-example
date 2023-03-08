@@ -1,0 +1,124 @@
+.siteFooter {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  a {
+    color: #8a94a7;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+.siteFooterInner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1128px;
+}
+
+.footerBrand {
+  flex: none;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  @media (min-width: 641px) {
+    flex: 50%;
+    justify-content: flex-start;
+  }
+}
+
+.footerLinks {
+  flex: none;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  list-style: none;
+  padding: 0;
+  li + li {
+    margin-left: 24px;
+  }
+
+  @media (min-width: 641px) {
+    flex: 50%;
+    justify-content: flex-end;
+    order: 1;
+    margin-bottom: 0;
+  }
+}
+
+.footerSocialLinks {
+  justify-content: flex-end;
+  margin-bottom: 24px;
+  list-style: none;
+  padding: 0;
+  flex: 50%;
+  width: 100%;
+  display: inline-flex;
+  li {
+    display: inline-flex;
+    + {
+      li {
+        margin-left: 16px;
+      }
+    }
+    a {
+      padding: 8px;
+    }
+  }
+}
+
+.screenReaderText {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  &:focus {
+    border-radius: 2px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #1d2026;
+    color: #0270d7 !important;
+    border: none;
+    height: auto;
+    left: 8px;
+    padding: 16px 32px;
+    top: 8px;
+    width: auto;
+    z-index: 100000;
+  }
+}
+
+.footerCopyright {
+  flex: none;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  justify-content: flex-start;
+  flex: 50%;
+}

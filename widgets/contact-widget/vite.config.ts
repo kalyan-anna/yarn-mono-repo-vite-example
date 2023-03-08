@@ -26,5 +26,11 @@ export default defineConfig((): UserConfig => {
       },
       minify: 'esbuild',
     },
+    resolve: {
+      alias: {
+        react: 'preact/compat',
+        'react-dom': 'preact/compat',
+      },
+    },
   };
 });

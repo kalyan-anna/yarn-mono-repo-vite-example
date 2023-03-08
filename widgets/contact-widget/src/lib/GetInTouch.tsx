@@ -1,4 +1,4 @@
-import { Button } from './Button';
+import { Button } from '@my-org/button';
 import styles from './GetInTouch.module.scss';
 
 export const GetInTouch = () => {

@@ -2,5 +2,9 @@
   "name": "@my-org/button",
   "version": "1.0.0",
   "main": "index.ts",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }

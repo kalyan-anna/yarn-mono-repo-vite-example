@@ -24,7 +24,6 @@ export default defineConfig((): UserConfig => {
           },
         },
       },
-      minify: 'esbuild',
     },
     resolve: {
       alias: {

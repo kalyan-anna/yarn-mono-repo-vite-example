@@ -24,7 +24,6 @@ export default defineConfig(({ mode }): UserConfig => {
           },
         },
       },
-      minify: 'terser',
     },
   };
 });

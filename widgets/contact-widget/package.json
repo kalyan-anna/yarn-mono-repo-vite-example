@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.11.3",
     "@my-org/button": "1.0.0"
+  },
+  "peerDependencies": {
+    "preact": "^10.11.3"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",

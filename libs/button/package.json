@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.ts",
   "license": "MIT",
+  "scripts": {
+    "build": "echo 'Do nothing'",
+    "dev": "echo 'Do nothing'"
+  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

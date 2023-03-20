@@ -14,9 +14,10 @@ export default defineConfig(({ mode }): UserConfig => {
         entry: 'src/main.tsx',
         name: 'footer-widget',
         fileName: 'footer-widget.min',
-        formats: ['es'],
+        formats: ['umd'],
       },
       rollupOptions: {
+        external: ['preact'],
         output: {
           assetFileNames: (assetInfo) => {
             if (assetInfo.name === 'style.css') return 'footer-widget.css';
@@ -24,7 +25,6 @@ export default defineConfig(({ mode }): UserConfig => {
           },
         },
       },
-      minify: 'terser',
     },
   };
 });

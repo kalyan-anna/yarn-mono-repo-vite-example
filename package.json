@@ -6,8 +6,9 @@
   "private": true,
   "scripts": {
     "build": "yarn workspaces run build",
-    "dev:footer": "yarn workspaces run dev",
-    "dev:contact": "yarn workspaces run dev"
+    "dev": "yarn dev:footer & yarn dev:contact",
+    "dev:footer": "yarn workspace @my-org/footer-widget dev",
+    "dev:contact": "yarn workspace @my-org/contact-widget dev"
   },
   "workspaces": [
     "apps/*",

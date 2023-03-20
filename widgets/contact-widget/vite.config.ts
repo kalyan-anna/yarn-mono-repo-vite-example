@@ -14,9 +14,10 @@ export default defineConfig((): UserConfig => {
         entry: 'src/main.tsx',
         name: 'contact-widget',
         fileName: 'contact-widget.min',
-        formats: ['es'],
+        formats: ['umd'],
       },
       rollupOptions: {
+        external: ['preact'],
         output: {
           assetFileNames: (assetInfo) => {
             if (assetInfo.name === 'style.css') return 'contact-widget.css';
@@ -24,7 +25,6 @@ export default defineConfig((): UserConfig => {
           },
         },
       },
-      minify: 'esbuild',
     },
     resolve: {
       alias: {

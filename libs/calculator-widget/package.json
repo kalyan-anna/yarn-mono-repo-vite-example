@@ -1,5 +1,5 @@
 {
-  "name": "@my-org/footer-widget",
+  "name": "@my-org/calculator-widget",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@my-org/button": "1.0.0"
+  },
+  "peerDependencies": {
     "preact": "^10.11.3"
   },
   "devDependencies": {

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Vite Widget | Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/preact/dist/preact.min.js"></script>
+
     <link
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600"
       rel="stylesheet"
@@ -14,11 +16,11 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link
       rel="stylesheet"
-      href="../../widgets/contact-widget/dist/contact-widget.css"
+      href="../../libs/contact-widget/dist/contact-widget.css"
     />
     <link
       rel="stylesheet"
-      href="../../widgets/footer-widget/dist/footer-widget.css"
+      href="../../libs/footer-widget/dist/footer-widget.css"
     />
   </head>
   <body class="is-boxed has-animations">
@@ -287,10 +289,10 @@
             <div>Placeholder for CONTACT widget</div>
           </div>
         </section>
-        <!-- <script
+        <script
           async
-          src="../../widgets/contact-widget/dist/contact-widget.min.js"
-        ></script> -->
+          src="../../libs/contact-widget/dist/contact-widget.min.umd.cjs"
+        ></script>
       </main>
       <div id="footer-widget-holder">
         <footer>
@@ -313,10 +315,10 @@
           </div>
         </footer>
       </div>
-      <!-- <script
+      <script
         async
-        src="../../widgets/footer-widget/dist/footer-widget.min.js"
-      ></script> -->
+        src="../../libs/footer-widget/dist/footer-widget.min.umd.cjs"
+      ></script>
     </div>
 
     <script src="dist/js/main.min.js"></script>

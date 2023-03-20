@@ -2,29 +2,35 @@ import { defineConfig, UserConfig } from 'vite';
 import preact from '@preact/preset-vite';
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }): UserConfig => {
+export default defineConfig((): UserConfig => {
   return {
     plugins: [preact()],
-    publicDir: mode === 'production' ? '' : 'public',
+    publicDir: false,
     server: {
-      port: 5174,
+      port: 5173,
     },
     build: {
       lib: {
         entry: 'src/main.tsx',
-        name: 'footer-widget',
-        fileName: 'footer-widget.min',
-        formats: ['es'],
+        name: 'contact-widget',
+        fileName: 'contact-widget.min',
+        formats: ['umd'],
       },
       rollupOptions: {
+        external: ['preact'],
         output: {
           assetFileNames: (assetInfo) => {
-            if (assetInfo.name === 'style.css') return 'footer-widget.css';
+            if (assetInfo.name === 'style.css') return 'contact-widget.css';
             return assetInfo.name;
           },
         },
       },
-      minify: 'terser',
+    },
+    resolve: {
+      alias: {
+        react: 'preact/compat',
+        'react-dom': 'preact/compat',
+      },
     },
   };
 });

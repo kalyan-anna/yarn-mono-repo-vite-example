@@ -1,5 +1,5 @@
 {
-  "name": "@my-org/contact-widget",
+  "name": "@my-org/footer-widget",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +8,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "preact": "^10.11.3",
-    "@my-org/button": "1.0.0"
+  "dependencies": {},
+  "peerDependencies": {
+    "preact": "^10.11.3"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",

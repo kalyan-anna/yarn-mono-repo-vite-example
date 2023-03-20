@@ -14,7 +14,7 @@ export default defineConfig(({ mode }): UserConfig => {
         entry: 'src/main.tsx',
         name: 'footer-widget',
         fileName: 'footer-widget.min',
-        formats: ['es', 'umd'],
+        formats: ['umd'],
       },
       rollupOptions: {
         external: ['preact'],

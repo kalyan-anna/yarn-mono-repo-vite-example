@@ -14,7 +14,7 @@ export default defineConfig((): UserConfig => {
         entry: 'src/main.tsx',
         name: 'calculator-widget',
         fileName: 'calculator-widget.min',
-        formats: ['es', 'umd'],
+        formats: ['umd'],
       },
       rollupOptions: {
         external: ['preact'],

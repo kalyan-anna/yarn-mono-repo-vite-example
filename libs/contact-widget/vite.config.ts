@@ -14,7 +14,7 @@ export default defineConfig((): UserConfig => {
         entry: 'src/main.tsx',
         name: 'contact-widget',
         fileName: 'contact-widget.min',
-        formats: ['es', 'umd'],
+        formats: ['umd'],
       },
       rollupOptions: {
         external: ['preact'],
